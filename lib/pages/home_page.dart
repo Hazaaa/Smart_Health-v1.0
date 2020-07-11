@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:smart_health/custom_widgets/appbar.dart';
+import 'package:smart_health/custom_widgets/drawer.dart';
+import 'package:smart_health/custom_widgets/news_widget.dart';
+import 'package:smart_health/custom_widgets/user_details_column.dart';
+import 'package:smart_health/custom_widgets/weather_widget.dart';
 import 'package:smart_health/themes/custom_theme.dart';
-
-import 'package:smart_health/widgets/custom_appbar.dart';
-import 'package:smart_health/widgets/news_widget.dart';
-import 'package:smart_health/widgets/user_details_column.dart';
-import 'package:smart_health/widgets/weather_widget.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -31,6 +31,7 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         appBar: CustomAppBar(),
+        drawer: CustomDrawer(),
         body: Column(
           children: <Widget>[
             Center(child: UserDetailsColumn()),
@@ -46,7 +47,6 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             NewsWidget(),
-            // TODO: ADD BOTTOM NAVBAR
           ],
         ),
       ),
