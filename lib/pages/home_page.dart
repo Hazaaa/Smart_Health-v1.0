@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: EdgeInsets.only(top: 15.0),
               child: Text(
-                "News from your region: ",
+                "News from your region",
                 style: GoogleFonts.lato(
                   color: Colors.black54,
                   fontSize: 18.0,
