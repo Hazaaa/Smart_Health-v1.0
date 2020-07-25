@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_health/custom_widgets/appbar.dart';
 import 'package:smart_health/custom_widgets/drawer.dart';
+import 'package:smart_health/custom_widgets/emergency_float_button.dart';
 import 'package:smart_health/custom_widgets/news_widget.dart';
 import 'package:smart_health/custom_widgets/user_details_column.dart';
 import 'package:smart_health/custom_widgets/weather_widget.dart';
-import 'package:smart_health/themes/custom_theme.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -19,17 +19,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
-          tooltip: "Emergency contact",
-          child: Icon(
-            Icons.phone,
-            color: Colors.white,
-          ),
-          onPressed: () {
-            // TODO: OPEN EMERGENCY MODAL
-          },
-        ),
+        floatingActionButton: EmergencyFloatButton(),
         appBar: CustomAppBar(),
         drawer: CustomDrawer(),
         body: Column(

@@ -39,6 +39,9 @@ class CustomDrawer extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.person_pin, size: 35.0),
                   title: Text("Profile"),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(ProfilePageRoute);
+                  },
                 ),
                 Divider(),
                 ListTile(
