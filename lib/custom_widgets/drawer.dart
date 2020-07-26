@@ -29,6 +29,9 @@ class CustomDrawer extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.map, size: 35.0),
                   title: Text("Personal routes"),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(PersonalRoutesPageRoute);
+                  },
                 ),
                 Divider(),
                 ListTile(
@@ -50,6 +53,9 @@ class CustomDrawer extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.description, size: 35.0),
                   title: Text("Records"),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(RecordsPageRoute);
+                  },
                 ),
                 Divider()
               ],

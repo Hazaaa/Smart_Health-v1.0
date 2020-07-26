@@ -32,7 +32,8 @@ class _ProfilePageState extends State<ProfilePage> {
     'height': null,
     'weight': null,
     'bloodType': null,
-    'alergies': null
+    'alergies': null,
+    'doctor': null
   };
   Map<String, dynamic> _emergencyContactFormData = {
     'name': null,
@@ -319,6 +320,14 @@ class _ProfilePageState extends State<ProfilePage> {
                             "Nuts, Sea food",
                             "Alergies",
                             'alergies',
+                            TextInputType.text,
+                            _editMedicalDetails),
+                        SizedBox(height: 10.0),
+                        _buildMedicalInfoTextField(
+                            context,
+                            "Brad Towns",
+                            "Assigned doctor",
+                            'doctor',
                             TextInputType.text,
                             _editMedicalDetails),
                         SizedBox(height: 10.0)

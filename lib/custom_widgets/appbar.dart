@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_health/routing/routes.dart';
 import 'package:smart_health/themes/custom_theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -23,9 +24,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       actions: <Widget>[
         Padding(
-          padding: EdgeInsets.only(right: 10.0),
-          child: Icon(Icons.notifications, color: Colors.grey, size: 30.0),
-        ),
+            padding: EdgeInsets.only(right: 3.0),
+            child: IconButton(
+              icon: Icon(Icons.notifications_active,
+                  color: Colors.red, size: 30.0),
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed(NotificationsPageRoute);
+              },
+            )),
       ],
       bottom: PreferredSize(
         child: Divider(
