@@ -34,6 +34,9 @@ class CustomDrawer extends StatelessWidget {
                 ListTile(
                   leading: Icon(Icons.wb_sunny, size: 35.0),
                   title: Text("Weather"),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(WeatherPageRoute);
+                  },
                 ),
                 Divider(),
                 ListTile(
@@ -48,12 +51,7 @@ class CustomDrawer extends StatelessWidget {
                   leading: Icon(Icons.description, size: 35.0),
                   title: Text("Records"),
                 ),
-                Divider(),
-                ListTile(
-                  leading: Icon(Icons.lock_outline, size: 35.0),
-                  title: Text("Log out"),
-                ),
-                Divider(),
+                Divider()
               ],
             ),
           )
