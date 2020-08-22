@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smart_health/routing/routes.dart';
-import 'package:smart_health/themes/custom_theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar();
@@ -19,7 +18,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       title: Text(
         "Smart Health",
-        style: titleTextStyle(),
+        style: TextStyle(color: Colors.black54),
       ),
       centerTitle: true,
       actions: <Widget>[

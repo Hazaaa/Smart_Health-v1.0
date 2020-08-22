@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_health/custom_widgets/appbar.dart';
 import 'package:smart_health/custom_widgets/drawer.dart';
 import 'package:smart_health/custom_widgets/emergency_float_button.dart';
@@ -173,7 +172,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     children: <Widget>[
                       Text(
                         "Basic information",
-                        style: GoogleFonts.lato(
+                        style: TextStyle(
                           color: Colors.black54,
                           fontSize: 18.0,
                         ),
@@ -250,7 +249,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     children: <Widget>[
                       Text(
                         "Medical information",
-                        style: GoogleFonts.lato(
+                        style: TextStyle(
                           color: Colors.black54,
                           fontSize: 18.0,
                         ),
@@ -346,7 +345,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     children: <Widget>[
                       Text(
                         "Emergency contact",
-                        style: GoogleFonts.lato(
+                        style: TextStyle(
                           color: Colors.black54,
                           fontSize: 18.0,
                         ),

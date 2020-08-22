@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smart_health/custom_widgets/appbar.dart';
 import 'package:smart_health/custom_widgets/drawer.dart';
 import 'package:smart_health/custom_widgets/emergency_float_button.dart';
@@ -12,7 +11,6 @@ class RecordsPage extends StatefulWidget {
 }
 
 class _RecordsPageState extends State<RecordsPage> {
-  String _searchPattern = "";
   int _numberOfRecords = 5;
 
   @override
@@ -29,7 +27,7 @@ class _RecordsPageState extends State<RecordsPage> {
                 SizedBox(height: 10.0),
                 Text(
                   "Medical records",
-                  style: GoogleFonts.lato(
+                  style: TextStyle(
                       color: Colors.black54,
                       fontSize: 18.0,
                       fontWeight: FontWeight.w700),
@@ -57,7 +55,6 @@ class _RecordsPageState extends State<RecordsPage> {
                           ),
                           onChanged: (text) {
                             setState(() {
-                              _searchPattern = text;
                             });
                           },
                         ),
@@ -78,7 +75,7 @@ class _RecordsPageState extends State<RecordsPage> {
                     return ExpansionTile(
                       subtitle: Text(
                         "Date: 20/07/2020",
-                        style: GoogleFonts.lato(
+                        style: TextStyle(
                             color: Colors.black54, fontSize: 12.0),
                       ),
                       leading: Icon(
@@ -87,7 +84,7 @@ class _RecordsPageState extends State<RecordsPage> {
                       ),
                       title: Text(
                         "Record $i",
-                        style: GoogleFonts.lato(fontSize: 18.0),
+                        style: TextStyle(fontSize: 18.0),
                       ),
                       children: <Widget>[
                         Padding(
@@ -98,57 +95,57 @@ class _RecordsPageState extends State<RecordsPage> {
                             children: <Widget>[
                               Text(
                                 "Doctor: ",
-                                style: GoogleFonts.lato(
+                                style: TextStyle(
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
                                 "Ben Geller",
-                                style: GoogleFonts.lato(fontSize: 14.0),
+                                style: TextStyle(fontSize: 14.0),
                               ),
                               SizedBox(height: 10.0),
                               Text(
                                 "Reason for coming: ",
-                                style: GoogleFonts.lato(
+                                style: TextStyle(
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
                                 "Said that he possible has a cold and that he can maybe die",
-                                style: GoogleFonts.lato(fontSize: 14.0),
+                                style: TextStyle(fontSize: 14.0),
                               ),
                               SizedBox(height: 10.0),
                               Text(
                                 "Symptoms: ",
-                                style: GoogleFonts.lato(
+                                style: TextStyle(
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
                                 "Sneezing",
-                                style: GoogleFonts.lato(fontSize: 14.0),
+                                style: TextStyle(fontSize: 14.0),
                               ),
                               SizedBox(height: 10.0),
                               Text(
                                 "Result: ",
-                                style: GoogleFonts.lato(
+                                style: TextStyle(
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
                                 "Patient has signs of cold",
-                                style: GoogleFonts.lato(fontSize: 14.0),
+                                style: TextStyle(fontSize: 14.0),
                               ),
                               SizedBox(height: 10.0),
                               Text(
                                 "Treatment: ",
-                                style: GoogleFonts.lato(
+                                style: TextStyle(
                                     fontSize: 15.0,
                                     fontWeight: FontWeight.w700),
                               ),
                               Text(
                                 "Drink more tea",
-                                style: GoogleFonts.lato(fontSize: 14.0),
+                                style: TextStyle(fontSize: 14.0),
                               ),
                               SizedBox(height: 10.0),
                             ],

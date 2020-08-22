@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class WeatherWidget extends StatelessWidget {
   const WeatherWidget({Key key}) : super(key: key);
@@ -23,7 +22,7 @@ class WeatherWidget extends StatelessWidget {
             padding: EdgeInsets.only(left: 15.0, bottom: 5.0),
             child: Text(
               "San Francisco",
-              style: GoogleFonts.lato(color: Colors.white, fontSize: 22.0, fontWeight: FontWeight.w700)
+              style: TextStyle(color: Colors.white, fontSize: 22.0, fontWeight: FontWeight.w700)
             ),
           ),
           Padding(
@@ -31,7 +30,7 @@ class WeatherWidget extends StatelessWidget {
                 EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.05, bottom: 2.0),
             child: Text(
               "32°C",
-              style: GoogleFonts.lato(color: Colors.white, fontSize: 23.0, fontWeight: FontWeight.w700)
+              style: TextStyle(color: Colors.white, fontSize: 23.0, fontWeight: FontWeight.w700)
             ),
           )
         ],
