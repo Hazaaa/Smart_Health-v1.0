@@ -133,40 +133,40 @@ class _RoutesPageState extends State<RoutesPage> {
     }
   }
 
-  _createPolylines(Position start, Position destination) async {
-    // Initializing PolylinePoints
-    polylinePoints = PolylinePoints();
+  // _createPolylines(Position start, Position destination) async {
+  //   // Initializing PolylinePoints
+  //   polylinePoints = PolylinePoints();
 
-    // Generating the list of coordinates to be used for
-    // drawing the polylines
-    PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      "AIzaSyBF3S0aJL_UmHFxLuwChpbnJRGc3yBv8Vw",
-      PointLatLng(start.latitude, start.longitude),
-      PointLatLng(destination.latitude, destination.longitude),
-      travelMode: TravelMode.transit,
-    );
+  //   // Generating the list of coordinates to be used for
+  //   // drawing the polylines
+  //   PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
+  //     "API_KEY",
+  //     PointLatLng(start.latitude, start.longitude),
+  //     PointLatLng(destination.latitude, destination.longitude),
+  //     travelMode: TravelMode.transit,
+  //   );
 
-    // Adding the coordinates to the list
-    if (result.points.isNotEmpty) {
-      result.points.forEach((PointLatLng point) {
-        polylineCoordinates.add(LatLng(point.latitude, point.longitude));
-      });
-    }
+  //   // Adding the coordinates to the list
+  //   if (result.points.isNotEmpty) {
+  //     result.points.forEach((PointLatLng point) {
+  //       polylineCoordinates.add(LatLng(point.latitude, point.longitude));
+  //     });
+  //   }
 
-    // Defining an ID
-    PolylineId id = PolylineId('poly');
+  //   // Defining an ID
+  //   PolylineId id = PolylineId('poly');
 
-    // Initializing Polyline
-    Polyline polyline = Polyline(
-      polylineId: id,
-      color: Colors.red,
-      points: polylineCoordinates,
-      width: 3,
-    );
+  //   // Initializing Polyline
+  //   Polyline polyline = Polyline(
+  //     polylineId: id,
+  //     color: Colors.red,
+  //     points: polylineCoordinates,
+  //     width: 3,
+  //   );
 
-    // Adding the polyline to the map
-    polylines[id] = polyline;
-  }
+  //   // Adding the polyline to the map
+  //   polylines[id] = polyline;
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -291,7 +291,7 @@ class _RoutesPageState extends State<RoutesPage> {
             child: Text("Yes"),
             onPressed: () {
               polylineCoordinates.clear();
-              _createPolylines(new Position(latitude: _currentPosition.target.latitude, longitude: _currentPosition.target.longitude), new Position(latitude: element.marker.position.latitude, longitude: element.marker.position.longitude));
+              //_createPolylines(new Position(latitude: _currentPosition.target.latitude, longitude: _currentPosition.target.longitude), new Position(latitude: element.marker.position.latitude, longitude: element.marker.position.longitude));
               Navigator.pop(context);
             },
           );
