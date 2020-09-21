@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_health/pages/notifications_page.dart';
 import 'package:smart_health/pages/routes_page.dart';
 import 'package:smart_health/routing/routes.dart';
 
@@ -21,8 +22,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case RecordsPageRoute:
       return MaterialPageRoute(builder: (context) => RecordsPage());
     case NotificationsPageRoute:
-    // TODO: Needs to be impelemented
-      throw UnimplementedError("Notifications route isn't implemented!");
+      return MaterialPageRoute(builder: (context) => NotificationsPage());
     default:
       return MaterialPageRoute(builder: (context) => HomePage());
   }
