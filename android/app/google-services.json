@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "106683653399",
+    "firebase_url": "https://smart-health-5ecbc.firebaseio.com",
+    "project_id": "smart-health-5ecbc",
+    "storage_bucket": "smart-health-5ecbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106683653399:android:d457e44127a34a77d82b52",
+        "android_client_info": {
+          "package_name": "com.smart_health.smart_health"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106683653399-rnq017hiiquur7723dd8k1maf22ku77c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeZWlhoiCCuWeI4b12J8E-afQVb7qaaSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106683653399-rnq017hiiquur7723dd8k1maf22ku77c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,6 +35,14 @@ class CustomDrawer extends StatelessWidget {
                 ),
                 Divider(),
                 ListTile(
+                  leading: Icon(Icons.local_pharmacy, size: 35.0),
+                  title: Text("Pharmacies"),
+                  onTap: () {
+                    Navigator.of(context).pushReplacementNamed(PharmaciesPageRoute);
+                  },
+                ),
+                Divider(),
+                ListTile(
                   leading: Icon(Icons.wb_sunny, size: 35.0),
                   title: Text("Weather"),
                   onTap: () {

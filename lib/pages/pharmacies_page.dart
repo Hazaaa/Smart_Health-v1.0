@@ -7,14 +7,14 @@ import 'package:smart_health/custom_widgets/drawer.dart';
 import 'package:smart_health/custom_widgets/emergency_float_button.dart';
 import 'package:smart_health/models/routes.dart';
 
-class RoutesPage extends StatefulWidget {
-  RoutesPage({Key key}) : super(key: key);
+class PharmaciesPage extends StatefulWidget {
+  PharmaciesPage({Key key}) : super(key: key);
 
   @override
-  _RoutesPageState createState() => _RoutesPageState();
+  _PharmaciesPageState createState() => _PharmaciesPageState();
 }
 
-class _RoutesPageState extends State<RoutesPage> {
+class _PharmaciesPageState extends State<PharmaciesPage> {
   // Location fields
   CameraPosition _currentPosition;
   bool _serviceEnabled;
